@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  dss:
+    build: .
+    image: 'dss:latest'
+    ports:
+      - '8888:8080'
