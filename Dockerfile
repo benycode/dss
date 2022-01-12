@@ -2,7 +2,7 @@ FROM openjdk:8-alpine
 
 RUN  apk update && apk add unzip
 
-COPY ./dss-demo-bundle-5.9.zip /tmp
+ADD https://ec.europa.eu/cefdigital/artifact/repository/esignaturedss/eu/europa/ec/joinup/sd-dss/dss-demo-bundle/5.9/dss-demo-bundle-5.9.zip /tmp
 RUN unzip /tmp/dss-demo-bundle-5.9.zip -d /tmp
 RUN mv /tmp/dss-demo-bundle-5.9 /dss
 
