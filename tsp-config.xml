@@ -22,7 +22,7 @@
 	</bean>
 	-->
 	<bean id="tspSource" class="eu.europa.esig.dss.service.tsp.OnlineTSPSource">
-		<property name="tspServer" value="http://tss.accv.es:8318/tsa" />
+		<property name="tspServer" value="http://apisix-gw-lb:9080/tsa" />
 	</bean>
 
 </beans>
